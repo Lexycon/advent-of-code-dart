@@ -9,6 +9,9 @@ extension RegExpExtension on RegExp {
   Iterable<String> allStringMatches(String input) =>
       allMatches(input).map((m) => m.group(0).toString());
 
+  List<int> allIntMatches(String input) =>
+      allMatches(input).map((m) => int.parse('${m.group(0)}')).toList();
+
   Iterable<String> allOverlappingStringMatches(String input) {
     final List<String> matches = [];
     for (int i = 0; i < input.length; i++) {
