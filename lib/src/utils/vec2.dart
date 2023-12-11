@@ -60,6 +60,9 @@ class Vec2 {
     }
   }
 
+  double manhattanDistanceTo(Vec2 other) =>
+      (x - other.x).abs() + (y - other.y).abs();
+
   @override
   bool operator ==(Object other) =>
       identical(other, this) ||
