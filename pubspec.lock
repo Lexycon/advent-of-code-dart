@@ -73,6 +73,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
+  equatable:
+    dependency: "direct main"
+    description:
+      name: equatable
+      sha256: c2b87cb7756efdf69892005af546c56c0b5037f54d2a88269b4f347a505e3ca2
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.5"
   file:
     dependency: transitive
     description:
@@ -153,6 +161,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.12.16"
+  memoized:
+    dependency: "direct main"
+    description:
+      name: memoized
+      sha256: cfcce9dc8d039e4240bf45fc163d4e052b636629380dd54d55c6879e36bcd7a1
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   meta:
     dependency: transitive
     description:
@@ -209,6 +225,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  quiver:
+    dependency: transitive
+    description:
+      name: quiver
+      sha256: b1c1ac5ce6688d77f65f3375a9abb9319b3cb32486bdc7a1e0fdf004d7ba4e47
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.1"
   shelf:
     dependency: transitive
     description:
@@ -321,6 +345,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.9"
+  to_string_pretty:
+    dependency: transitive
+    description:
+      name: to_string_pretty
+      sha256: "27dbe408684a7b31cc59c1ce525360fdf2fd690a290f26694c70b6263b39a542"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.7"
   typed_data:
     dependency: transitive
     description:
