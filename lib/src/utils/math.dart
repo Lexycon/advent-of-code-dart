@@ -19,3 +19,13 @@ double polygonArea(List<Vec2> points) {
 double polygonPointsInside(double area, int pointsBoundary) {
   return area + 1 - pointsBoundary / 2;
 }
+
+int shoelaceArea(List<Vec2> points) {
+  double perimeter = 0;
+  double area = 0;
+  for (int i = 0; i < points.length - 1; i++) {
+    perimeter += points[i].manhattanDistanceTo(points[i + 1]);
+    area += points[i].x * points[i + 1].y - points[i + 1].x * points[i].y;
+  }
+  return (perimeter + area) ~/ 2 + 1;
+}
