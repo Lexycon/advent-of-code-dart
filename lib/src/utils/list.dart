@@ -6,4 +6,9 @@ extension ListExtension on List<int> {
     }
     return newList;
   }
+
+  bool listContainsAll<T>(List<T> a, List<T> b) {
+    final setA = Set.of(a);
+    return setA.containsAll(b);
+  }
 }
