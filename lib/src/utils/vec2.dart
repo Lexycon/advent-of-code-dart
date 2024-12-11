@@ -74,6 +74,14 @@ class Vec2 {
   @override
   int get hashCode => x.hashCode ^ y.hashCode;
 
+  Vec2 get clockWise => switch (this) {
+        Vec2.up => Vec2.right,
+        Vec2.right => Vec2.down,
+        Vec2.down => Vec2.left,
+        Vec2.left => Vec2.up,
+        _ => Vec2.zero,
+      };
+
   @override
   String toString() => 'Vec2($x, $y)';
 }
